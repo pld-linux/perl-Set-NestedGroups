@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# don't perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	NestedGroups
@@ -6,7 +10,8 @@ Summary(pl):	Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/pañstw
 Name:		perl-Set-NestedGroups
 Version:	0.01
 Release:	11
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	25fb922eb8f2227716badbcb8a89202c
@@ -32,10 +37,13 @@ Przyk³adem takich grup mog± byæ listy kontroli dostêpu (ACL-e).
 	INSTALLDIRS=vendor
 %{__make}
 
+%{?with_tests:%{__make} test}
+
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
