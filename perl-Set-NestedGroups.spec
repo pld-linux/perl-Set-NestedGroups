@@ -1,8 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	NestedGroups
-Summary:	Set::NestedGroups perl module
-Summary(pl):	Modu³ perla Set::NestedGroups
+Summary:	Set::NestedGroups - grouped data eg ACL's, city/state/country etc
 Name:		perl-Set-NestedGroups
 Version:	0.01
 Release:	8
@@ -16,10 +15,8 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Set::NestedGroups perl module.
-
-%description -l pl
-Modu³ perla Set::NestedGroups.
+Set::NestedGroups gives an implementation of nested groups, access
+control lists (ACLs) would be one example of nested groups.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
