@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	NestedGroups
-Summary:	Set-NestedGroups perl module
-Summary(pl):	Modu³ perla Set-NestedGroups
+Summary:	Set::NestedGroups perl module
+Summary(pl):	Modu³ perla Set::NestedGroups
 Name:		perl-Set-NestedGroups
 Version:	0.01
 Release:	8
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Set-NestedGroups perl module.
+Set::NestedGroups perl module.
 
 %description -l pl
-Modu³ perla Set-NestedGroups.
+Modu³ perla Set::NestedGroups.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
