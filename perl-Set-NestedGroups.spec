@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Set
 %define	pnam	NestedGroups
-%include	/usr/lib/rpm/macros.perl
 Summary:	Set-NestedGroups perl module
 Summary(pl):	Modu³ perla Set-NestedGroups
 Name:		perl-Set-NestedGroups
 Version:	0.01
-Release:	7
-
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -23,7 +22,7 @@ Set-NestedGroups perl module.
 Modu³ perla Set-NestedGroups.
 
 %prep
-%setup -q -n Set-NestedGroups-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
