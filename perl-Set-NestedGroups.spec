@@ -29,7 +29,7 @@ Przyk³adem takich grup mog± byæ listy kontroli dostêpu (ACL-e).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
