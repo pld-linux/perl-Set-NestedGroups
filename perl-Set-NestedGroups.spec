@@ -3,7 +3,7 @@ Summary:	Set-NestedGroups perl module
 Summary(pl):	Modu³ perla Set-NestedGroups
 Name:		perl-Set-NestedGroups
 Version:	0.01
-Release:	5
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Set/Set-NestedGroups-%{ve
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 Provides:	perl(Set::NestedGroups::Member)
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
