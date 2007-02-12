@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	NestedGroups
 Summary:	Set::NestedGroups - grouped data eg ACLs, city/state/country etc
-Summary(pl):	Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/pañstwa itp
+Summary(pl.UTF-8):   Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/paÅ„stwa itp
 Name:		perl-Set-NestedGroups
 Version:	0.01
 Release:	12
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Set::NestedGroups gives an implementation of nested groups, access
 control lists (ACLs) would be one example of nested groups.
 
-%description -l pl
-Modu³ Set::NestedGroups udostêpnia implementacjê zagnie¿d¿onych grup.
-Przyk³adem takich grup mog± byæ listy kontroli dostêpu (ACL-e).
+%description -l pl.UTF-8
+ModuÅ‚ Set::NestedGroups udostÄ™pnia implementacjÄ™ zagnieÅ¼dÅ¼onych grup.
+PrzykÅ‚adem takich grup mogÄ… byÄ‡ listy kontroli dostÄ™pu (ACL-e).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
