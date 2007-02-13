@@ -6,7 +6,7 @@
 %define		pdir	Set
 %define		pnam	NestedGroups
 Summary:	Set::NestedGroups - grouped data eg ACLs, city/state/country etc
-Summary(pl.UTF-8):   Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/państwa itp
+Summary(pl.UTF-8):	Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/państwa itp
 Name:		perl-Set-NestedGroups
 Version:	0.01
 Release:	12
