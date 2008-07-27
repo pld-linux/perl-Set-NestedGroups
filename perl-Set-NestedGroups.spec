@@ -9,7 +9,7 @@ Summary:	Set::NestedGroups - grouped data eg ACLs, city/state/country etc
 Summary(pl.UTF-8):	Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/państwa itp
 Name:		perl-Set-NestedGroups
 Version:	0.01
-Release:	12
+Release:	13
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
