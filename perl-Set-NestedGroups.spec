@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# don't perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Set
 %define		pnam	NestedGroups
+%include	/usr/lib/rpm/macros.perl
 Summary:	Set::NestedGroups - grouped data eg ACLs, city/state/country etc
 Summary(pl.UTF-8):	Set::NestedGroups - pogrupowane dane np. ACL-e, miasta/stany/państwa itp
 Name:		perl-Set-NestedGroups
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	25fb922eb8f2227716badbcb8a89202c
+URL:		http://search.cpan.org/dist/Set-NestedGroups/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 Provides:	perl(Set::NestedGroups::Member)
